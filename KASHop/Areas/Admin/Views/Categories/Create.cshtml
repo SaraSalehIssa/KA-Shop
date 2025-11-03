@@ -1,0 +1,52 @@
+﻿@model Category
+
+@* <form method="Post" action="/Admin/Categories/Store">
+    <div class="form-group my-3">
+        <label for="categoryName">Category Name</label>
+        <input type="text" class="form-control" value="@Model.Name" name="Name" id="categoryName" placeholder="Enter Name">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+
+    <div class="form-group my-3">
+        <label for="categoryDescription">Category Description</label>
+        <textarea type="text" class="form-control" name="Description" id="categoryDescription" placeholder="Enter Description">@Model.Description</textarea>
+    </div>
+
+    <button type="submit" class="btn btn-block btn-dark btn-flat">Submit</button>
+</form> *@
+
+@* HTML Helper
+@using (Html.BeginForm("Store", "Categories", FormMethod.Post))
+{
+    <div class="form-group my-3">
+        @Html.LabelFor(c=>c.Name, new {@class="form-label"})
+        @Html.EditorFor(c => c.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Name" } })
+        @Html.ValidationMessageFor(c => c.Name)
+    </div>
+
+    <div class="form-group my-3">
+        @Html.LabelFor(c => c.Description, new { @class = "form-label" })
+        @Html.EditorFor(c => c.Description, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter Description" } })
+        @Html.ValidationMessageFor(c => c.Description)
+    </div>
+
+    <button type="submit" class="btn btn-block btn-dark btn-flat">Submit</button>
+
+} *@
+
+@* Tag Helper *@
+<form asp-action="Store" asp-controller="Categories" asp-area="Admin">
+    <div class="form-group my-3">
+        <label asp-for="Name"></label>
+        <input class="form-control" placeholder="Enter Name" asp-for="Name">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+
+    <div class="form-group my-3">
+        <label asp-for="Description"></label>
+        <input class="form-control" placeholder="Enter Description" asp-for="Description">
+        <span class="text-danger" asp-validation-for="Description"></span>
+    </div>
+
+    <button type="submit" class="btn btn-block btn-dark btn-flat">Submit</button>
+</form>

@@ -1,0 +1,120 @@
+﻿@model List<Product>
+
+@* @foreach (var product in @Model)
+{
+    <tr>
+        <td>@product.Id</td>
+        <td>@product.Name</td>
+        <td>@product.Description</td>
+        <td>
+            <img src="~/images/@product.Image" alt="Product Image" style="width: 50px;" />
+        </td>
+        <td>
+            <a href="#" class="btn btn-outline-info">Details</a>
+            <a href="/Admin/Products/Edit/@product.Id" class="btn btn-outline-warning">Edit</a>
+            <a href="/Admin/Products/Remove/@product.Id" class="btn btn-outline-danger">Delete</a>
+        </td>
+    </tr>
+} *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .products-section {
+            background-color: #f6f6f6;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            color: #222;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-content: center;
+            align-items: stretch;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+            .product-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            }
+
+        .product-img {
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+
+    <section class="products-section" id="shop">
+        <h2 class="section-title">All Products</h2>
+        <div class="products-grid">
+
+            @foreach (var product in @Model)
+            {
+                <div class="product-card">
+                    <img src="/images/@product.Image" alt="iPhone 17 Pro" class="product-img">
+                    <h3 class="product-title">@product.Name</h3>
+                    <p class="product-price">@product.Price ₪</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>            }
+        </div>
+    </section>
+
+</body>
+</html>
+

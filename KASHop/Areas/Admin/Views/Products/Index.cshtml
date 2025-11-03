@@ -1,0 +1,33 @@
+﻿@model List<Product>
+
+<table class="table table-hover text-nowrap">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in @Model)
+        {
+            <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td>@product.Description</td>
+            <td>
+                <img src="~/images/@product.Image" alt="Product Image" style="width: 50px;"/>
+            </td>
+            <td>
+                <a href="#" class="btn btn-outline-info">Details</a>
+                <a href="/Admin/Products/Edit/@product.Id" class="btn btn-outline-warning">Edit</a>
+                <a href="/Admin/Products/Remove/@product.Id" class="btn btn-outline-danger">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Admin/Products/Create" class="btn btn-outline-dark my-3">Create New Product</a>

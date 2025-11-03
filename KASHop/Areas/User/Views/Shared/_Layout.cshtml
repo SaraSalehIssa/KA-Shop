@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KA SHOP</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KASHop.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="~/">KA SHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="~/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="~/">Categories</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="~/User/Products/Index">All Products</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="hero-section text-white d-flex align-items-center" style="
+    background-image: url('/images/hero.png');
+    background-size: cover;
+    min-height: 80vh;
+    overflow: hidden;
+">
+        <style>
+            .hero-section h1 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            .hero-section p {
+                color: rgba(255, 255, 255, 0.75);
+                font-size: 1.2rem;
+            }
+
+            .hero-section img {
+                max-height: 400px;
+                width: auto;
+                animation: float 4s ease-in-out infinite;
+            }
+
+            .hero-section .btn {
+                padding: 0.75rem 1.5rem;
+                font-size: 1.1rem;
+                border-radius: 30px;
+            }
+
+            @@media (max-width: 992px) {
+                .hero-section
+
+            {
+                text-align: center;
+                padding: 80px 30px;
+            }
+
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+
+            .hero-section .btn {
+                font-size: 1rem;
+            }
+
+            }
+
+            @@media (max-width: 768px) {
+                .hero-section {
+                min-height: 70vh;
+                flex-direction: column;
+                text-align: center;
+                padding: 60px 20px;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+            }
+
+            .hero-section .btn {
+                font-size: 0.95rem;
+                padding: 0.6rem 1.2rem;
+            }
+
+            }
+        </style>
+
+        <div class="container text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0"></div>
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+                    <h1>Discover the Latest Smartphones</h1>
+                    <p>Upgrade to the newest tech — sleek designs, powerful performance, and unbeatable prices.</p>
+                    <a href="~/User/Products/Index" class="btn btn-primary me-2">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Galaxy Z Flip7 | Samsung</h2>
+
+            <div class="video-container">
+                <video controls autoplay muted loop>
+                    <source src="~/videos/galaxy%20z%20flip7.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <style>
+            .video-section {
+                padding: 80px 20px;
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 40px;
+            }
+
+            .video-container {
+                position: relative;
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+                overflow: hidden;
+                border-radius: 15px;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+                aspect-ratio: 16 / 9;
+            }
+
+                .video-container::before {
+                    content: "";
+                    display: block;
+                    padding-top: 56.25%;
+                }
+
+                .video-container video,
+                .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border: 0;
+                }
+
+            @@media (max-width: 768px) {
+                .section-title
+
+            {
+                font-size: 1.6rem;
+            }
+
+            }
+        </style>
+    </section>
+
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; KA SHOP 2025</p></div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
