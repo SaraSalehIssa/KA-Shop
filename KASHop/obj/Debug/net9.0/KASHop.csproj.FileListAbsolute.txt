@@ -343,3 +343,4 @@ D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Debug\net9.0\compressed\x4hw0pyx78-3
 D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Debug\net9.0\compressed\2h4rskoocv-1za78g898y.gz
 D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Debug\net9.0\compressed\slfc2x30gz-vtm9dvzpet.gz
 D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Debug\net9.0\compressed\sgd77k8o6z-jmgwmyfb49.gz
+D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Debug\net9.0\KASHOP.sourcelink.json

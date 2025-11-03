@@ -1,4 +1,5 @@
-﻿@model List<Product>
+﻿@using KASHOP.ViewModels
+@model List<ProductsViewModel>
 
 <table class="table table-hover text-nowrap">
     <thead>
@@ -6,6 +7,8 @@
             <th>ID</th>
             <th>Name</th>
             <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
             <th>Image</th>
             <th>Action</th>
         </tr>
@@ -17,8 +20,10 @@
             <td>@product.Id</td>
             <td>@product.Name</td>
             <td>@product.Description</td>
+            <td>@product.Price</td>
+            <td>@product.CategoryName</td>
             <td>
-                <img src="~/images/@product.Image" alt="Product Image" style="width: 50px;"/>
+                <img src="@product.ImageUrl" alt="Product Image" style="width: 50px;"/>
             </td>
             <td>
                 <a href="#" class="btn btn-outline-info">Details</a>

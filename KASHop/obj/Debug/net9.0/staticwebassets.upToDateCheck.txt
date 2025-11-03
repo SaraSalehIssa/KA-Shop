@@ -9,6 +9,18 @@ wwwroot\Admin\js\adminlte.js
 wwwroot\Admin\js\adminlte.js.map
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\08647076-34b5-4897-a6cd-dbbea7a87645.jpg
+wwwroot\images\1dd2e1b3-9ab2-417d-8541-ce702641439e.jpg
+wwwroot\images\23470992-d0ba-44ed-b6ea-5b6887a409b4.jpg
+wwwroot\images\26c892c1-5341-483e-908d-d1e6f6ebb18b.jpg
+wwwroot\images\611c7ce8-a6c9-465e-bbe9-54c8a78439b6.jpg
+wwwroot\images\77fbd3f9-cfd9-4a4b-ab9e-762d7983c127.jpg
+wwwroot\images\799aa680-fbb2-4d5f-8675-7d7d54b26a1f.jpg
+wwwroot\images\a656f8b3-a840-4eff-859c-07134aa015be.jpg
+wwwroot\images\c6b7865b-c72e-45b6-b496-e132b286a412.jpg
+wwwroot\images\d69599a1-cfad-4361-bdaf-30b4820da6ce.jpg
+wwwroot\images\e10d8070-fbac-495a-8181-5e52baca1729.jpg
+wwwroot\images\Hero.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -70,6 +82,7 @@ wwwroot\lib\jquery\dist\jquery.slim.js
 wwwroot\lib\jquery\dist\jquery.slim.min.js
 wwwroot\lib\jquery\dist\jquery.slim.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\videos\Galaxy Z Flip7.mp4
 D:\Full Stack\Backend\MVC\KASHop\KASHop\wwwroot\lib\jquery\LICENSE.txt
 D:\Full Stack\Backend\MVC\KASHop\KASHop\wwwroot\lib\jquery\dist\jquery.slim.min.map
 D:\Full Stack\Backend\MVC\KASHop\KASHop\wwwroot\lib\jquery\dist\jquery.slim.min.js

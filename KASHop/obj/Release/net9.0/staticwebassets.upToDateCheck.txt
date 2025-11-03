@@ -82,6 +82,7 @@ wwwroot\images\08647076-34b5-4897-a6cd-dbbea7a87645.jpg
 wwwroot\images\a656f8b3-a840-4eff-859c-07134aa015be.jpg
 wwwroot\images\Hero.png
 wwwroot\videos\Galaxy Z Flip7.mp4
+wwwroot\images\23470992-d0ba-44ed-b6ea-5b6887a409b4.jpg
 D:\Full Stack\Backend\MVC\KASHop\KASHop\wwwroot\Admin\css\adminlte.css
 D:\Full Stack\Backend\MVC\KASHop\KASHop\wwwroot\Admin\css\adminlte.css.map
 D:\Full Stack\Backend\MVC\KASHop\KASHop\wwwroot\Admin\js\adminlte.js

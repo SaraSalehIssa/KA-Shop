@@ -343,3 +343,4 @@ D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Release\net9.0\refint\KASHOP.dll
 D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Release\net9.0\KASHOP.pdb
 D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Release\net9.0\KASHOP.genruntimeconfig.cache
 D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Release\net9.0\ref\KASHOP.dll
+D:\Full Stack\Backend\MVC\KASHop\KASHop\obj\Release\net9.0\KASHOP.sourcelink.json
